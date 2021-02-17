@@ -8,7 +8,7 @@ class MahasiswaController extends Controller
 {
     public function index()
     {
-        $student = Students::orderBy('id', 'desc')->paginate(10);
+        $student = Students::orderBy('id', 'desc')->paginate(19);
 
         return view('students.index', compact('student'));
     }

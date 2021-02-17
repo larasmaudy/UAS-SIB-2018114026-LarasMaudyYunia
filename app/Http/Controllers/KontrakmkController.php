@@ -41,7 +41,7 @@ class KontrakmkController extends Controller
     public function edit($id)
     {
         $contract = Contracts::where('id', $id)->first();
-        return view('contracts.edit', ['contracts' => $contracts]);
+        return view('contracts.edit', ['contracts' => $contract]);
     }
     public function update(Request $request, $id)
     {

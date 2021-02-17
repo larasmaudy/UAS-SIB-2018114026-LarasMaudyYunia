@@ -25,7 +25,7 @@
   <tbody>
   @foreach ($contract as $contracts)
     <tr>
-    <td>{{!!$contracts -> mhs_id !!}}</td>
+    <td>{!!$contracts -> mhs_id !!}</td>
     <td>{!!$contracts -> smstr_id !!}</td>
  
     <td><a href="/contracts/{{$contracts->id}}/edit"><button type="button" class="btn btn-outline-secondary">Edit</a></button></td>

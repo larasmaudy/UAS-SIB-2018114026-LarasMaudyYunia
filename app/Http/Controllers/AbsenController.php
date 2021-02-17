@@ -8,7 +8,7 @@ class AbsenController extends Controller
 {
     public function index()
     {
-        $presence = Presences::orderBy('id', 'desc')->paginate(10);
+        $presence = Presences::orderBy('id', 'desc')->paginate(19);
 
         return view('presences.index', compact('presence'));
     }
